@@ -1,5 +1,7 @@
 Project Description: Simple Calculator in ASP.NET
-The Simple Calculator Project is a fundamental web application developed using ASP.NET Web Forms and C#. It is designed to perform basic arithmetic operations, providing users with an intuitive and user-friendly interface for performing calculations. The calculator serves as an ideal example of how to integrate backend logic with a web-based frontend, showcasing the core principles of ASP.NET development.
+An Internship Project by Simplifi Solution Pvt. Ltd.
+
+The Simple Calculator Project is a fundamental web application developed during an internship at Simplifi Solution Pvt. Ltd. It is designed to perform basic arithmetic operations, providing users with an intuitive and user-friendly interface for performing calculations. This project serves as an excellent example of integrating backend logic with a web-based frontend, showcasing the core principles of ASP.NET development.
 
 Features of the Calculator:
 User-Friendly Interface:
@@ -37,7 +39,7 @@ The results are formatted and presented clearly to users.
 Scalability:
 
 This calculator can be easily extended to include advanced mathematical operations like square root, exponentiation, trigonometric functions, and more.
-
+Integration with APIs or databases is possible to store user history or provide more complex functionality.
 Benefits of the Project:
 Educational Value:
 
@@ -52,7 +54,10 @@ Code Modularity:
 The project adheres to clean coding practices, making it easy to understand, modify, and expand.
 Proper separation of concerns between frontend and backend logic ensures maintainability.
 Possible Enhancements:
+Advanced Operations:
 
+Include operations such as modulus, percentage, square roots, and exponents.
+Add support for multiple operations in a single calculation.
 Responsive Design:
 
 Make the calculator mobile-friendly using CSS and JavaScript frameworks like Bootstrap for a seamless user experience across all devices.
@@ -65,4 +70,5 @@ Add a history panel to display previously calculated results.
 Implement a clear button to reset inputs and outputs.
 Integration with Modern Technologies:
 
+Use AJAX for a smoother user experience by updating results without a full page reload.
 Extend the application into an ASP.NET Core project for cross-platform deployment.
