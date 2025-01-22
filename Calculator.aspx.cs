@@ -18,22 +18,17 @@ public partial class Calculator : System.Web.UI.Page
     }
 
 
+    private static string operand1 = string.Empty;  /
+    private static string operand2 = string.Empty;  
+    private static string operation = string.Empty; 
 
-    private static string operand1 = string.Empty;  // First number
-    private static string operand2 = string.Empty;  // Second number
-    private static string operation = string.Empty; // Operation
 
-
-    // Handles the number button click event ( 1 to 9 or 0 or dote also )
     protected void btnNumber_Click(object sender, EventArgs e)
         {
-            // Get the clicked number button text
             string number = ((System.Web.UI.WebControls.Button)sender).Text;
 
-            // Append the clicked number to the display
             txtDisplay.Text += number;
 
-            // If no operation yet, append to operand1, otherwise to operand2
             if (string.IsNullOrEmpty(operation))
             {
                 operand1 += number;
@@ -46,31 +41,30 @@ public partial class Calculator : System.Web.UI.Page
 
 
 
-    // Handles the operator button click event ( + - * / )
+
     protected void btnOperator_Click(object sender, EventArgs e)
         {
-            // Get the clicked operator button text
+
             string operatorSymbol = ((System.Web.UI.WebControls.Button)sender).Text;
 
-            // Store the operator and clear the display for the second number input
             operation = operatorSymbol;
             txtDisplay.Text = string.Empty;
         }
 
 
 
-    // // Equal to buttton start here 
+
     protected void btnequaltwo_Click(object sender, EventArgs e)
     {
             double num1, num2, result = 0;
 
-            // Try parsing operand1 and operand2 to numbers
+    
             bool isValidNum1 = double.TryParse(operand1, out num1);
             bool isValidNum2 = double.TryParse(operand2, out num2);
 
             if (isValidNum1 && isValidNum2)
             {
-                // Perform the operation based on the operator
+
                 switch (operation)
                 {
                     case "+":
@@ -95,7 +89,7 @@ public partial class Calculator : System.Web.UI.Page
                         break;
                 }
 
-                // Display the result and reset operands and operator
+        
                 txtDisplay.Text = result.ToString();
                 operand1 = result.ToString();
                 operand2 = string.Empty;
@@ -110,17 +104,17 @@ public partial class Calculator : System.Web.UI.Page
 
 
 
-    // Clear buttton start here 
+
     protected void btnclear_Click(object sender, EventArgs e)
     {
-        // Clear everything: operands, operator, and display
+
         operand1 = operand2 = operation = string.Empty;
         txtDisplay.Text = string.Empty;
     }
 
 
 
-    // remove buttton start here 
+
     protected void btnremoveonebyone_Click(object sender, EventArgs e)
     {
         
@@ -140,7 +134,7 @@ public partial class Calculator : System.Web.UI.Page
 
 
 
-    // Percantage buttton start here 
+
     protected void btnpercent_Click(object sender, EventArgs e)
     {
         
@@ -150,12 +144,12 @@ public partial class Calculator : System.Web.UI.Page
 
            if (string.IsNullOrEmpty(operation))
             {
-                // No operator is selected, calculate the percentage of operand1
+1
                 if (valid_No)
                 {
                     num1 = num1 / 100;
                     txtDisplay.Text = num1.ToString();
-                    operand1 = num1.ToString();  // Update operand1 with the percentage value
+                    operand1 = num1.ToString(); 
                 }
             }
     }
