@@ -70,5 +70,4 @@ Add a history panel to display previously calculated results.
 Implement a clear button to reset inputs and outputs.
 Integration with Modern Technologies:
 
-Use AJAX for a smoother user experience by updating results without a full page reload.
 Extend the application into an ASP.NET Core project for cross-platform deployment.
